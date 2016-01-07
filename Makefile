@@ -31,6 +31,16 @@
 # no license, express or implied, by estoppel or otherwise, to any
 # intellectual property rights is granted herein.
 
+SHELL := /bin/bash
+
+DESTDIR :=
+
+prefix = /usr/local
+exec_prefix = $(prefix)
+datarootdir = $(prefix)/share
+includedir = $(prefix)/include
+libdir = $(exec_prefix)/lib
+
 REPOROOTDIR ?= $(CURDIR)/..
 include $(REPOROOTDIR)/mk/definitions.mk
 
